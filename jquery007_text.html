@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //value를 val로 사용하기
+        //innerText를 html()로 쓰기
+
+        let dnode1 = $("div").text(); //div에서 text만 가져오기
+        console.log(`dnode1:${dnode1}`);
+
+        let dnode2 = $("div").html(); // div에서 html로 가져온다하면 다가져옴
+
+        let dnode3 = $("input").val();
+        console.log(`dnode3:${dnode3}`);
+      });
+    </script>
+  </head>
+  <body>
+    <button>click</button>
+    <div><span>javascript</span></div>
+    <input type="text" value="jquery" />
+  </body>
+</html>
